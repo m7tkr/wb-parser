@@ -1,0 +1,117 @@
+syntax on " Turn on syntax highlighting
+set nocompatible " Required for Vundle
+set encoding=utf-8
+set arabicshape
+" some comments
+
+set shell=/usr/local/bin/bash
+
+set autochdir " changes default dir to currentfile dir
+set showmatch " Show matching brackets
+set wrap " Wrap text that goes beyond screen length
+set number " Show line numbers
+set noerrorbells " Stop system vim sounds
+set guifont=Fira\ Code:h16,\ Kawkab\ Mono:h16 
+set macligatures
+set guioptions=
+set lines=31 columns=101
+set hlsearch " highlight search
+set ignorecase " ignorecase
+set incsearch " highlight while typing
+set nowrapscan " stops search scroll at file end
+set scrolloff=5 " 5 lines before/after cursor preserved
+set showcmd " show commands written
+set clipboard=unnamed " use systems clipboard
+	
+filetype plugin indent on
+set softtabstop=4
+set tabstop=4 " show existing tab with 4 spaces width
+set shiftwidth=4 " when indenting with '>', use 4 spaces width
+set expandtab " On pressing tab, insert 4 spaces
+" autocmd BufWritePost .vimrc source %
+
+" Vim-Plugin
+call plug#begin('~/.vim/plugged')
+
+	Plug 'preservim/nerdtree'
+	Plug 'altercation/vim-colors-solarized'
+	" Plug 'whatisinternet/vim-auto-solarize' causes slow save
+	" Plug 'vim-airline/vim-airline'
+	Plug 'tpope/vim-surround'
+	Plug 'iamcco/markdown-preview.vim'
+	Plug 'prettier/vim-prettier'
+	Plug 'tpope/vim-commentary'
+	" Plug 'vim-airline/vim-airline-themes'
+	Plug 'tpope/vim-fugitive'
+	Plug 'rrethy/vim-illuminate'
+	Plug 'yuttie/comfortable-motion.vim'
+    Plug 'sheerun/vim-polyglot'
+
+call plug#end()
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin('~/.vim/bundle')
+
+	" Plugin 'ycm-core/YouCompleteMe'
+	Plugin 'loremipsum'
+	Plugin 'tpope/vim-surround'
+    Plugin 'tmhedberg/SimpylFold' " creates less folds 
+call vundle#end()            " required
+
+" Plugin Customization Begins Here
+
+" Colors Solarized
+let g:solarized_termcolors=256 "Terminal Support
+colorscheme solarized
+call togglebg#map("<F9>")
+set background=dark
+
+" Setting Solarized Ailrline
+" air-line
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+" powerline symbols
+  let g:airline_left_sep = ''
+  let g:airline_left_alt_sep = ''
+  let g:airline_right_sep = ''
+  let g:airline_right_alt_sep = ''
+  let g:airline_symbols.branch = ''
+  let g:airline_symbols.colnr = ' c:'
+  let g:airline_symbols.readonly = ''
+  let g:airline_symbols.linenr = ' l:'
+  let g:airline_symbols.maxlinenr = ''
+  let g:airline_symbols.dirty='*'
+
+" inserting one line below/above the current
+
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>
+
+" ----------------------
+" ----python setup------
+" ----------------------
+set splitright " default split behaviour
+
+"split navigations
+nnoremap <C-J> <C-W><C-J> " split below
+nnoremap <C-K> <C-W><C-K> " split above
+nnoremap <C-L> <C-W><C-L> " split to the right
+nnoremap <C-H> <C-W><C-H> " split to the left
+
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+
+" Enable folding with the spacebar
+nnoremap <space> za
+
+let g:SimpylFold_docstring_preview=1 "folded code docstings
+
+" Flagging Unnecessary Whitespace
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
