@@ -1,0 +1,18 @@
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+EDITOR=/usr/local/bin/mvim
+PS1='[\@] abenguefith in ($(pwd)) > '
+
+# Setting PATH for HOME directory
+PATH="/usr/local/Cellar/python@3.10/3.10.6_1:/usr/local/Cellar/mysql/8.0.28_1:$PATH:$HOME/bin"
+export PATH
+export EDITOR
+
+
+# Setting aliases
+alias la="ls -a"
+alias openvimrc="mvim $HOME/.vim/vimrc"
+alias openaranki="cd $HOME/desktop/aranki"
+alias readmemd='mkdir ./$(date +%Y%m%d%H%M); cd $_; mvim README.md;'
+alias wbparser='cd $HOME/desktop/wb-parser'
+alias python="python3"
