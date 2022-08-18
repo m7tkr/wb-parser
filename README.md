@@ -24,6 +24,7 @@
 - [ ] Понимание парсинга WB
 - [ ] Основы Python
 - [ ] Основы MySQL
+- [ ] Основы Data Structures & Algorithms
 - [ ] Основы Django
 - [ ] Основы JavaScript
 
