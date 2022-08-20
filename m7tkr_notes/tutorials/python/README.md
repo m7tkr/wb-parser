@@ -5,7 +5,10 @@
 ## virtualenv
 
 > intended to separate packaged, version of python
+<<<<<<< HEAD
 >
+=======
+>>>>>>> 96dea5f (scope, pip, venv, files are covered)
 > don't store your project data files here
 
 * `virtualenv <project-name>` : runs virtenv in current dir
@@ -25,6 +28,7 @@
 * `pip install -U <package>` : upgrade packaged
 * `pip freeze > req.txt` : outputs all installed packages w/ version numbers into req.txt file
 * `pip install -r req.txt` : install packages listed in req.txt file
+<<<<<<< HEAD
 
 > check how to upgrade all the packages at once
 
@@ -52,3 +56,6 @@
 * `.env` file : keeps venv specific variables in it, accessible w/ `os.environ['<var-name>']`
 
 > `.env` is supposed to be in .gitignore
+=======
+> check how to upgrade all the packages at once
+>>>>>>> 96dea5f (scope, pip, venv, files are covered)
