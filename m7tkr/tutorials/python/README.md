@@ -1,6 +1,7 @@
 # python cheatsheet
 
 ## python bash
+* `python -m <package> --version` : shows <package> version
 
 ## virtualenv
 
@@ -52,3 +53,10 @@
 * `.env` file : keeps venv specific variables in it, accessible w/ `os.environ['<var-name>']`
 
 > `.env` is supposed to be in .gitignore
+
+## django
+
+* `django-admin startproject <project-name>` : start new project
+* `python manage.py runserver` : run server
+* `Ctrl-C` : stop server
+* `python manage.py startapp <name>` : create new app

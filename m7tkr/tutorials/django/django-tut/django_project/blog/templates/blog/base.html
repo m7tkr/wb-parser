@@ -1,0 +1,17 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        {% if title %}
+        <title>Django Project - {{ title }}</title>
+        {% else %}
+        <title>Django Project</title>
+        {% endif %}
+        <link rel="stylesheet" href="{% static 'blog/main.css' %}">
+    </head>
+    <body>
+        {% block content %}{% endblock %}
+    </body>
+</html>
