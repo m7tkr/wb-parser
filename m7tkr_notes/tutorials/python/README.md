@@ -73,14 +73,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> a05e9fd (django models)
+=======
+>>>>>>> 432a1ff (admin page setup completed)
 >>>>>>> 12d6ebe (tut: admin page setup completed)
 =======
 * `python manage.py sqlmigrate <app-name> <migration-no>` : shows sql code that will be run
 * `python manage.py shell` : runs python shell that allows to work w/ django objects
 
 >>>>>>> ea31f01 (django models tut)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -95,3 +99,8 @@
 >>>>>>> e972cd4 (django tutorials)
 =======
 >>>>>>> a05e9fd (django models)
+=======
+=======
+>>>>>>> 12d6ebe (tut: admin page setup completed)
+>>>>>>> 3e84eca (admin page setup completed)
+>>>>>>> 432a1ff (admin page setup completed)
