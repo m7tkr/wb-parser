@@ -57,6 +57,9 @@
 ## django
 
 * `django-admin startproject <project-name>` : start new project
-* `python manage.py runserver` : run server
+* `python manage.py runserver` : run server of created app
 * `Ctrl-C` : stop server
 * `python manage.py startapp <name>` : create new app
+* `python manage.py makemigrations` : detects db changes, and prepares django to apply them
+* `python manage.py migrate` : apply db changes into django
+* `python manage.py createsuperuser` : creates admin page credentials

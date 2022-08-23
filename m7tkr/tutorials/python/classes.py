@@ -1,5 +1,6 @@
 # python oop
 
+
 class Employee:
 
     num_of_emps = 0
@@ -37,7 +38,7 @@ class Employee:
         self.pay = int(self.pay * Employee.raise_amount)
 
     @classmethod
-    def set_raise_amount(cls, amount):  # cls is convention
+    def set_raise_amount(cls, amount):   # cls is convention
         cls.raise_amount = amount
 
     @classmethod
