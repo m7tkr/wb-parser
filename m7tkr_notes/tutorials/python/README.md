@@ -58,6 +58,9 @@
 
 * `django-admin startproject <project-name>` : start new project
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a05e9fd (django models)
 * `python manage.py runserver` : run server of created app
 * `Ctrl-C` : stop server
 * `python manage.py startapp <name>` : create new app
@@ -69,12 +72,16 @@
 * `python manage.py createsuperuser` : creates admin page credentials
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a05e9fd (django models)
 >>>>>>> 12d6ebe (tut: admin page setup completed)
 =======
 * `python manage.py sqlmigrate <app-name> <migration-no>` : shows sql code that will be run
 * `python manage.py shell` : runs python shell that allows to work w/ django objects
 
 >>>>>>> ea31f01 (django models tut)
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 12d6ebe (tut: admin page setup completed)
@@ -86,3 +93,5 @@
 >>>>>>> 2b9a8bc (django tutorials started)
 >>>>>>> 6d69347 (django tutorials started)
 >>>>>>> e972cd4 (django tutorials)
+=======
+>>>>>>> a05e9fd (django models)

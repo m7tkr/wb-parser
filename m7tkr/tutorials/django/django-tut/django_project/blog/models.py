@@ -1,5 +1,8 @@
 from django.db import models
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> a05e9fd (django models)
 from django.utils import timezone
 from django.contrib.auth.models import User
 
@@ -12,7 +15,10 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+<<<<<<< HEAD
 =======
 
 # Create your models here.
 >>>>>>> 6d69347 (django tutorials started)
+=======
+>>>>>>> a05e9fd (django models)
