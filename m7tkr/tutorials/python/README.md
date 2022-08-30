@@ -63,3 +63,6 @@
 * `python manage.py makemigrations` : detects db changes, and prepares django to apply them
 * `python manage.py migrate` : apply db changes into django
 * `python manage.py createsuperuser` : creates admin page credentials
+* `python manage.py sqlmigrate <app-name> <migration-no>` : shows sql code that will be run
+* `python manage.py shell` : runs python shell that allows to work w/ django objects
+

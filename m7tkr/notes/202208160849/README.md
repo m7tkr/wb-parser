@@ -24,3 +24,7 @@ https://github.com/macvim-dev/macvim/issues/866 - нашел решение, ч�
 * `Ctrl+w` + `_` : set height (ex. `50<C-w>_`)
 * `Ctrl+w` + `|` : set width (ex. `50<C-w>|`)
 * `Ctrl+w` + `=` : equalize w and h 
+
+> Wed 24 Aug 2022 14:27:57 MSK
+
+https://dev.to/evilcel3ri/i-spent-3-years-configuring-n-vim-and-this-what-i-learnt-22on : spent 3 years configuring vim
