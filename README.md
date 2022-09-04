@@ -7,6 +7,8 @@
 
 # Wilberries Parser
 
+[![Join the chat at https://gitter.im/wb-parser/community](https://badges.gitter.im/wb-parser/community.svg)](https://gitter.im/wb-parser/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Читай сперва!!!
 
 Начиная работу над данным проектом, я(мы) буду(ем) стараться:
